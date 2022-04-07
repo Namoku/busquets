@@ -14,17 +14,18 @@
           </div>
           <form onsubmit="return verifyPassword()">
             <div class="section">
+              <h3>Datos personales</h3>
               <div class="inputGroup">
                 <label for="nombre">Nombre Usuario</label>
-                <input name="nombre" type="text" required />
+                <input name="nombre" type="text" placeholder="pedro123..." required />
               </div>
               <div class="inputGroup">
                 <label for="contraseña">Contraseña</label>
-                <input name="contraseña" type="password" required />
+                <input name="contraseña" type="password" placeholder="Debe coincidir..." required />
               </div>
               <div class="inputGroup">
                 <label for="contraseñaDoble">Repetir contraseña</label>
-                <input name="contraseñaDoble" type="password" required />
+                <input name="contraseñaDoble" type="password" placeholder="Debe coincidir..." required />
                 <label class="passwordError" for="errorContraseña"></label>
               </div>
               <div class="inputGroup">
@@ -32,81 +33,101 @@
                 <input type="email" name="email" required />
               </div>
             </div>
-
-            <label for="minFecha">Fecha inicio</label>
-            <input id="minFecha" name="minFecha" type="date" required />
-            <a href="detalles.html#Text" />(justificacion)</a>
-            <br>
-            <label for="minFecha">Fecha final</label>
-            <input id="maxFecha" name="maxFecha" type="date" required />
-            <a href="detalles.html#Text" />(justificacion)</a>
-            <br>
-            <label for="direccion">Direccion</label>
-            <input name="direccion" type="text" />
-            <a href="detalles.html#Text" />(justificacion)</a>
-            <br>
-            <label for="ciudad">Ciudad</label>
-            <input name="ciudad" type="text" />
-            <a href="detalles.html#Text" />(justificacion)</a>
-            <br>
-            <label for="provincia">Provincia</label>
-            <input name="provincia" type="text" />
-            <a href="detalles.html#Text" />(justificacion)</a>
-            <br>
-            <label for="numeroHuespedes">Numero de Huespedes</label>
-            <input name="numeroHuespedes" type="number" />
-            <a href="detalles.html#Number" />(justificacion)</a>
-            <br>
-            Servicios
-            <a href="detalles.html#Checkbox" />(justificacion)</a>
-            <br>
-            <input type="checkbox" name="ac" />
-            <label for="ac" />Aire Acondicionado</label>
-            <input type="checkbox" name="almohadas" />
-            <label for="almohadas" />Almohadas a la carta</label>
-            <br>
-            <input type="checkbox" name="cajaFuerte" />
-            <label for="cajaFuerte" />Caja fuerte</label>
-            <input type="checkbox" name="detectorHumos" />
-            <label for="detectorHumos" />Detector de humos</label>
-            <br>
-            <input type="checkbox" name="minibar" />
-            <label for="minibar" />Minibar</label>
-            <input type="checkbox" name="mesaTrabajo" />
-            <label for="mesaTrabajo" />Mesa de trabajo</label>
-            <br>
-            <input type="checkbox" name="internet" />
-            <label for="internet" />Conexion a Internet</label>
-            <input type="checkbox" name="wifi" />
-            <label for="wifi" />WiFi</label>
-            <br>
-            Tipo de habitacion
-            <a href="detalles.html#RadioButton" />(justificacion)</a>
-            <br>
-            <input type="radio" name="suite" id="individual"/>
-            <label for="individual" />Individual</label>
-            <br>
-            <input type="radio" name="suite" id="doble"/>
-            <label for="doble" />Doble</label>
-            <br>
-            <input type="radio" name="suite" id="suite"/>
-            <label for="suite" />Suite</label>
-            <br>
-            Pension
-            <a href="detalles.html#RadioButton" />(justificacion)</a>
-            <br>
-            <input type="radio" name="pension" id="alojamiento"/>
-            <label for="alojamiento" />Alojamiento</label>
-            <br>
-            <input type="radio" name="pension" id="desayuno"/>
-            <label for="desayuno" />Desayuno</label>
-            <br>
-            <input type="radio" name="pension" id="media"/>
-            <label for="media" />Media</label>
-            <br>
-            <input type="radio" name="pension" id="completa"/>
-            <label for="completa" />Completa</label>
-            <br>
+            <div class="section">
+              <div class="inputGroup">
+                <label for="minFecha">Fecha inicio</label>
+                <input id="minFecha" name="minFecha" type="date" required />
+              </div>
+              <div class="inputGroup">
+                <label for="minFecha">Fecha final</label>
+                <input id="maxFecha" name="maxFecha" type="date" required />
+              </div>
+              <div class="inputGroup">
+                <label for="direccion">Direccion</label>
+                <input name="direccion" type="text" />
+              </div>
+              <div class="inputGroup">
+                <label for="ciudad">Ciudad</label>
+                <input name="ciudad" type="text" />
+              </div>
+              <div class="inputGroup">
+                <label for="provincia">Provincia</label>
+                <input name="provincia" type="text" />
+              </div>
+              <div class="inputGroup">
+                <label for="numeroHuespedes">Numero de Huespedes</label>
+                <input name="numeroHuespedes" type="number" />
+              </div>
+            </div>
+            <div class="section">
+              <h3>Servicios</h3>
+              <div class="inputGroup">
+                <input type="checkbox" name="ac" />
+                <label for="ac" />Aire Acondicionado</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="almohadas" />
+                <label for="almohadas" />Almohadas a la carta</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="cajaFuerte" />
+                <label for="cajaFuerte" />Caja fuerte</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="detectorHumos" />
+                <label for="detectorHumos" />Detector de humos</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="minibar" />
+                <label for="minibar" />Minibar</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="mesaTrabajo" />
+                <label for="mesaTrabajo" />Mesa de trabajo</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="internet" />
+                <label for="internet" />Conexion a Internet</label>
+              </div>
+              <div class="inputGroup">
+                <input type="checkbox" name="wifi" />
+                <label for="wifi" />WiFi</label>
+              </div>
+            </div>
+            <div class="section">
+              <h3>Tipo de habitacion</h3>
+              <div class="inputGroup">
+                <input type="radio" name="suite" id="individual"/>
+                <label for="individual" />Individual</label>
+              </div>
+              <div class="inputGroup">
+                <input type="radio" name="suite" id="doble"/>
+                <label for="doble" />Doble</label>
+              </div>
+              <div class="inputGroup">
+                <input type="radio" name="suite" id="suite"/>
+                <label for="suite" />Suite</label>
+              </div>
+            </div>
+            <div class="section">
+              <h3>Pension</h3>
+              <div class="inputGroup">
+                <input type="radio" name="pension" id="alojamiento"/>
+                <label for="alojamiento" />Alojamiento</label>
+              </div>
+              <div class="inputGroup">
+                <input type="radio" name="pension" id="desayuno"/>
+                <label for="desayuno" />Desayuno</label>
+              </div>
+              <div class="inputGroup">
+                <input type="radio" name="pension" id="media"/>
+                <label for="media" />Media</label>
+              </div>
+              <div class="inputGroup">
+                <input type="radio" name="pension" id="completa"/>
+                <label for="completa" />Completa</label>
+              </div>
+            </div>
             Comentarios o sugerencias
             <a href="detalles.html#TextArea" />(justificacion)</a>
             <br>

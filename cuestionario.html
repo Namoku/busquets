@@ -16,30 +16,31 @@
             <div class="section">
               <h3>Datos personales</h3>
               <div class="inputGroup">
-                <label for="nombre">Nombre Usuario</label>
+                <label class="required" for="nombre">Nombre Usuario</label>
                 <input name="nombre" type="text" placeholder="pedro123..." required />
               </div>
               <div class="inputGroup">
-                <label for="contraseña">Contraseña</label>
+                <label class="required" for="contraseña">Contraseña</label>
                 <input name="contraseña" type="password" placeholder="Debe coincidir..." required />
               </div>
               <div class="inputGroup">
-                <label for="contraseñaDoble">Repetir contraseña</label>
+                <label class="required" for="contraseñaDoble">Repetir contraseña</label>
                 <input name="contraseñaDoble" type="password" placeholder="Debe coincidir..." required />
                 <label class="passwordError" for="errorContraseña"></label>
               </div>
               <div class="inputGroup">
-                <label for="email">E-mail contacto</label>
+                <label class="required" for="email">E-mail contacto</label>
                 <input type="email" name="email" required />
               </div>
             </div>
             <div class="section">
+              <h3>Datos de hospedaje</h3>
               <div class="inputGroup">
-                <label for="minFecha">Fecha inicio</label>
+                <label class="required" for="minFecha">Fecha inicio</label>
                 <input id="minFecha" name="minFecha" type="date" required />
               </div>
               <div class="inputGroup">
-                <label for="minFecha">Fecha final</label>
+                <label class="required" for="minFecha">Fecha final</label>
                 <input id="maxFecha" name="maxFecha" type="date" required />
               </div>
               <div class="inputGroup">
@@ -128,18 +129,20 @@
                 <label for="completa" />Completa</label>
               </div>
             </div>
-            Comentarios o sugerencias
-            <a href="detalles.html#TextArea" />(justificacion)</a>
-            <br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="33" ></textarea>
-            <br>
-            <input type="checkbox" id="termCheck" required />
-            <label for="termCheck">Acepto la politica de privacidad</label>
-            <br>
-            <input type="submit" value="Enviar" />
-            <a href="detalles.html#Submit" />(justificacion)</a>
-            <input type="reset" value="Limpiar" />
-            <a href="detalles.html#Button" />(justificacion)</a>
+            <div class="section">
+              <h3>Comentarios o sugerencias</h3>
+              <textarea id="comentarios" name="comentarios" rows="4" cols="33" ></textarea>
+            </div>
+            <div class="section">
+              <div class="inputGroupButton">
+                <input type="checkbox" id="termCheck" required />
+                <label class="required" for="termCheck">Acepto la politica de privacidad</label>
+              </div>
+              <div class="buttonGroup">
+                <input type="submit" value="Enviar" />
+                <input type="reset" value="Limpiar" />
+              </div>
+            </div>
           </form>
         </div>
       </div>

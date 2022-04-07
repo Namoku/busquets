@@ -1,0 +1,156 @@
+<!-- Se probo en Edge y Firefox -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuestionario</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+    <body>
+      <div class="body">
+        <div class="container">
+          <div class="header">
+            <h1>Actividad 2</h1>
+          </div>
+          <form onsubmit="return verifyPassword()">
+            <div class="section">
+              <div class="inputGroup">
+                <label for="nombre">Nombre Usuario</label>
+                <input name="nombre" type="text" required />
+              </div>
+              <div class="inputGroup">
+                <label for="contraseña">Contraseña</label>
+                <input name="contraseña" type="password" required />
+              </div>
+              <div class="inputGroup">
+                <label for="contraseñaDoble">Repetir contraseña</label>
+                <input name="contraseñaDoble" type="password" required />
+                <label class="passwordError" for="errorContraseña"></label>
+              </div>
+              <div class="inputGroup">
+                <label for="email">E-mail contacto</label>
+                <input type="email" name="email" required />
+              </div>
+            </div>
+
+            <label for="minFecha">Fecha inicio</label>
+            <input id="minFecha" name="minFecha" type="date" required />
+            <a href="detalles.html#Text" />(justificacion)</a>
+            <br>
+            <label for="minFecha">Fecha final</label>
+            <input id="maxFecha" name="maxFecha" type="date" required />
+            <a href="detalles.html#Text" />(justificacion)</a>
+            <br>
+            <label for="direccion">Direccion</label>
+            <input name="direccion" type="text" />
+            <a href="detalles.html#Text" />(justificacion)</a>
+            <br>
+            <label for="ciudad">Ciudad</label>
+            <input name="ciudad" type="text" />
+            <a href="detalles.html#Text" />(justificacion)</a>
+            <br>
+            <label for="provincia">Provincia</label>
+            <input name="provincia" type="text" />
+            <a href="detalles.html#Text" />(justificacion)</a>
+            <br>
+            <label for="numeroHuespedes">Numero de Huespedes</label>
+            <input name="numeroHuespedes" type="number" />
+            <a href="detalles.html#Number" />(justificacion)</a>
+            <br>
+            Servicios
+            <a href="detalles.html#Checkbox" />(justificacion)</a>
+            <br>
+            <input type="checkbox" name="ac" />
+            <label for="ac" />Aire Acondicionado</label>
+            <input type="checkbox" name="almohadas" />
+            <label for="almohadas" />Almohadas a la carta</label>
+            <br>
+            <input type="checkbox" name="cajaFuerte" />
+            <label for="cajaFuerte" />Caja fuerte</label>
+            <input type="checkbox" name="detectorHumos" />
+            <label for="detectorHumos" />Detector de humos</label>
+            <br>
+            <input type="checkbox" name="minibar" />
+            <label for="minibar" />Minibar</label>
+            <input type="checkbox" name="mesaTrabajo" />
+            <label for="mesaTrabajo" />Mesa de trabajo</label>
+            <br>
+            <input type="checkbox" name="internet" />
+            <label for="internet" />Conexion a Internet</label>
+            <input type="checkbox" name="wifi" />
+            <label for="wifi" />WiFi</label>
+            <br>
+            Tipo de habitacion
+            <a href="detalles.html#RadioButton" />(justificacion)</a>
+            <br>
+            <input type="radio" name="suite" id="individual"/>
+            <label for="individual" />Individual</label>
+            <br>
+            <input type="radio" name="suite" id="doble"/>
+            <label for="doble" />Doble</label>
+            <br>
+            <input type="radio" name="suite" id="suite"/>
+            <label for="suite" />Suite</label>
+            <br>
+            Pension
+            <a href="detalles.html#RadioButton" />(justificacion)</a>
+            <br>
+            <input type="radio" name="pension" id="alojamiento"/>
+            <label for="alojamiento" />Alojamiento</label>
+            <br>
+            <input type="radio" name="pension" id="desayuno"/>
+            <label for="desayuno" />Desayuno</label>
+            <br>
+            <input type="radio" name="pension" id="media"/>
+            <label for="media" />Media</label>
+            <br>
+            <input type="radio" name="pension" id="completa"/>
+            <label for="completa" />Completa</label>
+            <br>
+            Comentarios o sugerencias
+            <a href="detalles.html#TextArea" />(justificacion)</a>
+            <br>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="33" ></textarea>
+            <br>
+            <input type="checkbox" id="termCheck" required />
+            <label for="termCheck">Acepto la politica de privacidad</label>
+            <br>
+            <input type="submit" value="Enviar" />
+            <a href="detalles.html#Submit" />(justificacion)</a>
+            <input type="reset" value="Limpiar" />
+            <a href="detalles.html#Button" />(justificacion)</a>
+          </form>
+        </div>
+      </div>
+    </body>
+    <script>
+      // Aquí se usan constantes para obtener los elementos del dom.
+      const minFecha = document.getElementById("minFecha");
+            const maxFecha = document.getElementById("maxFecha");
+            const passwordInput = document.querySelectorAll("input[type='password']");
+            const passwordError = document.querySelectorAll("label[for=errorContraseña]");
+
+            // Un evento para asignar los valores minimos para la fecha
+            window.addEventListener("load", () => minFecha.min = maxFecha.min = new Date().toISOString().split("T")[0]);
+
+            // Aca asignamos un evento en cada input de la password para que al cambiarse haga una verificacion entre los dos.
+            passwordInput.forEach(input => {
+                    input.addEventListener("input", () => {
+                            if (passwordInput[0].value !== passwordInput[1].value)
+                              passwordError[0].innerText = "Las contraseñas no coinciden";
+                            else
+                              passwordError[0].innerText  = "";
+                          });
+                  });
+
+            // Un evento para cuando se haga el cambio de la fecha, cambie el valor del segundo date como minimo del valor del primer date.
+            minFecha.addEventListener("change", () => maxFecha.min = minFecha.value);
+
+            // Es un metodo que regresa false para que el onsubmit no funcione si existe el error de las password.
+            const verifyPassword = () => {
+                    console.log(passwordInput[0].value !== passwordInput[1].value)
+                    if (passwordInput[0].value !== passwordInput[1].value)
+                      return false;
+                  }
+    </script>
+</html>

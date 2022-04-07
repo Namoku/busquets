@@ -21,7 +21,7 @@ body {
   padding: 10px;
 }
 
-.section .inputGroup {
+.section .inputGroup, .inputGroupButton {
   color: #fff;
   display: flex;
   justify-content: center;

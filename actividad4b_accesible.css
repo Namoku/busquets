@@ -1,0 +1,20 @@
+@import "actividad4b_standar.css";
+
+.section .inputGroup, .inputGroupButton {
+  color: aliceblue;
+}
+
+.buttonGroup > input {
+  background-color: aqua;
+  color: black;
+  font-weight: bold;
+}
+
+.required {
+  color: #f91;
+  font-weight: bold;
+}
+
+.inputGroup input[type=text], input[type=password], input[type=email], input[type=number], input[type=date], textarea {
+  background-color: white;
+}

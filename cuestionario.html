@@ -26,7 +26,7 @@
                   <div class="inputGroup">
                     <label class="required" for="contraseñaDoble">Repetir contraseña</label>
                     <input id="contraseñaDoble" type="password" placeholder="Debe coincidir..." required >
-                    <label class="passwordError" for="errorContraseña"></label>
+                    <label class="passwordError"></label>
                   </div>
                   <div class="inputGroup">
                     <label class="required" for="email">E-mail contacto</label>
@@ -151,7 +151,7 @@
         const minFecha = document.getElementById("minFecha");
                 const maxFecha = document.getElementById("maxFecha");
                 const passwordInput = document.querySelectorAll("input[type='password']");
-                const passwordError = document.querySelectorAll("label[for=errorContraseña]");
+                const passwordError = document.querySelectorAll("label[class=passwordError]");
 
                 // Un evento para asignar los valores minimos para la fecha
                 window.addEventListener("load", () => minFecha.min = maxFecha.min = new Date().toISOString().split("T")[0]);

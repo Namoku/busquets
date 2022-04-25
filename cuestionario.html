@@ -1,6 +1,6 @@
 <!-- Se probo en Edge y Firefox -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <title>Cuestionario</title>
@@ -19,133 +19,133 @@
           <form onsubmit="return verifyPassword()">
             <div class="section">
               <h3>Datos personales</h3>
-              <div class="inputGroup">
+              <fieldset class="inputGroup">
                 <label class="required" for="nombre">Nombre Usuario</label>
                 <input id="nombre" type="text" placeholder="pedro123..." required >
-              </div>
-                <div class="inputGroup">
+              </fieldset>
+                <fieldset class="inputGroup">
                   <label class="required" for="contraseña">Contraseña</label>
                   <input id="contraseña" type="password" placeholder="Debe coincidir..." required >
-                </div>
-                  <div class="inputGroup">
+                </fieldset>
+                  <fieldset class="inputGroup">
                     <label class="required" for="contraseñaDoble">Repetir contraseña</label>
                     <input id="contraseñaDoble" type="password" placeholder="Debe coincidir..." required >
                     <label class="passwordError"></label>
-                  </div>
-                  <div class="inputGroup">
+                  </fieldset>
+                  <fieldset class="inputGroup">
                     <label class="required" for="email">E-mail contacto</label>
                     <input type="email" id="email" required >
-                  </div>
+                  </fieldset>
             </div>
             <div class="section">
               <h3>Datos de hospedaje</h3>
-              <div class="inputGroup">
+              <fieldset class="inputGroup">
                 <label class="required" for="minFecha">Fecha inicio</label>
                 <input id="minFecha" name="minFecha" type="date" required >
-              </div>
-                <div class="inputGroup">
+              </fieldset>
+                <fieldset class="inputGroup">
                   <label class="required" for="maxFecha">Fecha final</label>
                   <input id="maxFecha" name="maxFecha" type="date" required >
-                </div>
-                  <div class="inputGroup">
+                </fieldset>
+                  <fieldset class="inputGroup">
                     <label for="direccion">Direccion</label>
                     <input id="direccion" type="text" >
-                  </div>
-                    <div class="inputGroup">
+                  </fieldset>
+                    <fieldset class="inputGroup">
                       <label for="ciudad">Ciudad</label>
                       <input id="ciudad" type="text" >
-                    </div>
-                      <div class="inputGroup">
+                    </fieldset>
+                      <fieldset class="inputGroup">
                         <label for="provincia">Provincia</label>
                         <input id="provincia" type="text" >
-                      </div>
-                        <div class="inputGroup">
+                      </fieldset>
+                        <fieldset class="inputGroup">
                           <label for="numeroHuespedes">Numero de Huespedes</label>
                           <input id="numeroHuespedes" type="number" >
-                        </div>
+                        </fieldset>
             </div>
             <div class="section">
               <h3>Servicios</h3>
-              <div class="inputGroupButton">
+              <fieldset class="inputGroupButton">
                 <input type="checkbox" id="ac" >
                 <label for="ac" >Aire Acondicionado</label>
-              </div>
-                <div class="inputGroupButton">
+              </fieldset>
+                <fieldset class="inputGroupButton">
                   <input type="checkbox" id="almohadas" >
                   <label for="almohadas" >Almohadas a la carta</label>
-                </div>
-                  <div class="inputGroupButton">
+                </fieldset>
+                  <fieldset class="inputGroupButton">
                     <input type="checkbox" id="cajaFuerte" >
                     <label for="cajaFuerte" >Caja fuerte</label>
-                  </div>
-                    <div class="inputGroupButton">
+                  </fieldset>
+                    <fieldset class="inputGroupButton">
                       <input type="checkbox" id="detectorHumos" >
                       <label for="detectorHumos" >Detector de humos</label>
-                    </div>
-                      <div class="inputGroupButton">
+                    </fieldset>
+                      <fieldset class="inputGroupButton">
                         <input type="checkbox" id="minibar" >
                         <label for="minibar" >Minibar</label>
-                      </div>
-                        <div class="inputGroupButton">
+                      </fieldset>
+                        <fieldset class="inputGroupButton">
                           <input type="checkbox" id="mesaTrabajo" >
                           <label for="mesaTrabajo" >Mesa de trabajo</label>
-                        </div>
-                          <div class="inputGroupButton">
+                        </fieldset>
+                          <fieldset class="inputGroupButton">
                             <input type="checkbox" id="internet" >
                             <label for="internet" >Conexion a Internet</label>
-                          </div>
-                            <div class="inputGroupButton">
+                          </fieldset>
+                            <fieldset class="inputGroupButton">
                               <input type="checkbox" id="wifi" >
                               <label for="wifi" >WiFi</label>
-                            </div>
+                            </fieldset>
             </div>
             <div class="section">
               <h3>Tipo de habitacion</h3>
-              <div class="inputGroupButton">
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="suite" id="individual">
                 <label for="individual" >Individual</label>
-              </div>
-              <div class="inputGroupButton">
+              </fieldset>
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="suite" id="doble">
                 <label for="doble" >Doble</label>
-              </div>
-              <div class="inputGroupButton">
+              </fieldset>
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="suite" id="suite">
                 <label for="suite" >Suite</label>
-              </div>
+              </fieldset>
             </div>
             <div class="section">
               <h3>Pension</h3>
-              <div class="inputGroupButton">
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="pension" id="alojamiento">
                 <label for="alojamiento" >Alojamiento</label>
-              </div>
-              <div class="inputGroupButton">
+              </fieldset>
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="pension" id="desayuno">
                 <label for="desayuno" >Desayuno</label>
-              </div>
-              <div class="inputGroupButton">
+              </fieldset>
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="pension" id="media">
                 <label for="media" >Media</label>
-              </div>
-              <div class="inputGroupButton">
+              </fieldset>
+              <fieldset class="inputGroupButton">
                 <input type="radio" name="pension" id="completa">
                 <label for="completa" >Completa</label>
-              </div>
+              </fieldset>
             </div>
             <div class="section">
               <h3>Comentarios o sugerencias</h3>
               <textarea id="comentarios" name="comentarios" rows="4" cols="33" ></textarea>
             </div>
             <div class="section">
-              <div class="inputGroupButton">
+              <fieldset class="inputGroupButton">
                 <input type="checkbox" id="termCheck" required >
                 <label class="required" for="termCheck">Acepto la politica de privacidad</label>
-              </div>
-              <div class="buttonGroup">
+              </fieldset>
+              <fieldset class="buttonGroup">
                 <input type="submit" value="Enviar" >
                 <input type="reset" value="Limpiar" >
-              </div>
+              </fieldset>
             </div>
           </form>
         </div>

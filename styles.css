@@ -10,6 +10,12 @@ body {
   background-color: #222831;
 }
 
+.container header {
+  display: flex;
+  min-width: 20rem;
+  justify-content: space-around;
+}
+
 .section {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +63,7 @@ body {
 }
 
 ::placeholder {
-  color: #000;
+  color: #00000099;
 }
 
 .required {

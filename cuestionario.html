@@ -19,19 +19,19 @@
                 <label class="required" for="nombre">Nombre Usuario</label>
                 <input name="nombre" type="text" placeholder="pedro123..." required >
               </div>
-              <div class="inputGroup">
-                <label class="required" for="contraseña">Contraseña</label>
-                <input name="contraseña" type="password" placeholder="Debe coincidir..." required >
-              </div>
-              <div class="inputGroup">
-                <label class="required" for="contraseñaDoble">Repetir contraseña</label>
-                <input name="contraseñaDoble" type="password" placeholder="Debe coincidir..." required >
-                <label class="passwordError" for="errorContraseña"></label>
-              </div>
-              <div class="inputGroup">
-                <label class="required" for="email">E-mail contacto</label>
-                <input type="email" name="email" required >
-              </div>
+                <div class="inputGroup">
+                  <label class="required" for="contraseña">Contraseña</label>
+                  <input name="contraseña" type="password" placeholder="Debe coincidir..." required >
+                </div>
+                  <div class="inputGroup">
+                    <label class="required" for="contraseñaDoble">Repetir contraseña</label>
+                    <input name="contraseñaDoble" type="password" placeholder="Debe coincidir..." required >
+                    <label class="passwordError" for="errorContraseña"></label>
+                  </div>
+                  <div class="inputGroup">
+                    <label class="required" for="email">E-mail contacto</label>
+                    <input type="email" name="email" required >
+                  </div>
             </div>
             <div class="section">
               <h3>Datos de hospedaje</h3>
@@ -39,26 +39,26 @@
                 <label class="required" for="minFecha">Fecha inicio</label>
                 <input id="minFecha" name="minFecha" type="date" required >
               </div>
-              <div class="inputGroup">
-                <label class="required" for="minFecha">Fecha final</label>
-                <input id="maxFecha" name="maxFecha" type="date" required >
-              </div>
-              <div class="inputGroup">
-                <label for="direccion">Direccion</label>
-                <input name="direccion" type="text" >
-              </div>
-              <div class="inputGroup">
-                <label for="ciudad">Ciudad</label>
-                <input name="ciudad" type="text" >
-              </div>
-              <div class="inputGroup">
-                <label for="provincia">Provincia</label>
-                <input name="provincia" type="text" >
-              </div>
-              <div class="inputGroup">
-                <label for="numeroHuespedes">Numero de Huespedes</label>
-                <input name="numeroHuespedes" type="number" >
-              </div>
+                <div class="inputGroup">
+                  <label class="required" for="minFecha">Fecha final</label>
+                  <input id="maxFecha" name="maxFecha" type="date" required >
+                </div>
+                  <div class="inputGroup">
+                    <label for="direccion">Direccion</label>
+                    <input name="direccion" type="text" >
+                  </div>
+                    <div class="inputGroup">
+                      <label for="ciudad">Ciudad</label>
+                      <input name="ciudad" type="text" >
+                    </div>
+                      <div class="inputGroup">
+                        <label for="provincia">Provincia</label>
+                        <input name="provincia" type="text" >
+                      </div>
+                        <div class="inputGroup">
+                          <label for="numeroHuespedes">Numero de Huespedes</label>
+                          <input name="numeroHuespedes" type="number" >
+                        </div>
             </div>
             <div class="section">
               <h3>Servicios</h3>
@@ -66,34 +66,34 @@
                 <input type="checkbox" name="ac" >
                 <label for="ac" >Aire Acondicionado</label>
               </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="almohadas" >
-                <label for="almohadas" >Almohadas a la carta</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="cajaFuerte" >
-                <label for="cajaFuerte" >Caja fuerte</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="detectorHumos" >
-                <label for="detectorHumos" >Detector de humos</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="minibar" >
-                <label for="minibar" >Minibar</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="mesaTrabajo" >
-                <label for="mesaTrabajo" >Mesa de trabajo</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="internet" >
-                <label for="internet" >Conexion a Internet</label>
-              </div>
-              <div class="inputGroupButton">
-                <input type="checkbox" name="wifi" >
-                <label for="wifi" >WiFi</label>
-              </div>
+                <div class="inputGroupButton">
+                  <input type="checkbox" name="almohadas" >
+                  <label for="almohadas" >Almohadas a la carta</label>
+                </div>
+                  <div class="inputGroupButton">
+                    <input type="checkbox" name="cajaFuerte" >
+                    <label for="cajaFuerte" >Caja fuerte</label>
+                  </div>
+                    <div class="inputGroupButton">
+                      <input type="checkbox" name="detectorHumos" >
+                      <label for="detectorHumos" >Detector de humos</label>
+                    </div>
+                      <div class="inputGroupButton">
+                        <input type="checkbox" name="minibar" >
+                        <label for="minibar" >Minibar</label>
+                      </div>
+                        <div class="inputGroupButton">
+                          <input type="checkbox" name="mesaTrabajo" >
+                          <label for="mesaTrabajo" >Mesa de trabajo</label>
+                        </div>
+                          <div class="inputGroupButton">
+                            <input type="checkbox" name="internet" >
+                            <label for="internet" >Conexion a Internet</label>
+                          </div>
+                            <div class="inputGroupButton">
+                              <input type="checkbox" name="wifi" >
+                              <label for="wifi" >WiFi</label>
+                            </div>
             </div>
             <div class="section">
               <h3>Tipo de habitacion</h3>
@@ -146,35 +146,35 @@
           </form>
         </div>
       </div>
+      <script>
+        // Aquí se usan constantes para obtener los elementos del dom.
+        const minFecha = document.getElementById("minFecha");
+                const maxFecha = document.getElementById("maxFecha");
+                const passwordInput = document.querySelectorAll("input[type='password']");
+                const passwordError = document.querySelectorAll("label[for=errorContraseña]");
+
+                // Un evento para asignar los valores minimos para la fecha
+                window.addEventListener("load", () => minFecha.min = maxFecha.min = new Date().toISOString().split("T")[0]);
+
+                // Aca asignamos un evento en cada input de la password para que al cambiarse haga una verificacion entre los dos.
+                passwordInput.forEach(input => {
+                          input.addEventListener("input", () => {
+                                    if (passwordInput[0].value !== passwordInput[1].value)
+                                      passwordError[0].innerText = "Las contraseñas no coinciden";
+                                    else
+                                      passwordError[0].innerText  = "";
+                                  });
+                        });
+
+                // Un evento para cuando se haga el cambio de la fecha, cambie el valor del segundo date como minimo del valor del primer date.
+                minFecha.addEventListener("change", () => maxFecha.min = minFecha.value);
+
+                // Es un metodo que regresa false para que el onsubmit no funcione si existe el error de las password.
+                const verifyPassword = () => {
+                          console.log(passwordInput[0].value !== passwordInput[1].value)
+                          if (passwordInput[0].value !== passwordInput[1].value)
+                            return false;
+                        }
+      </script>
     </body>
-    <script>
-      // Aquí se usan constantes para obtener los elementos del dom.
-      const minFecha = document.getElementById("minFecha");
-            const maxFecha = document.getElementById("maxFecha");
-            const passwordInput = document.querySelectorAll("input[type='password']");
-            const passwordError = document.querySelectorAll("label[for=errorContraseña]");
-
-            // Un evento para asignar los valores minimos para la fecha
-            window.addEventListener("load", () => minFecha.min = maxFecha.min = new Date().toISOString().split("T")[0]);
-
-            // Aca asignamos un evento en cada input de la password para que al cambiarse haga una verificacion entre los dos.
-            passwordInput.forEach(input => {
-                    input.addEventListener("input", () => {
-                            if (passwordInput[0].value !== passwordInput[1].value)
-                              passwordError[0].innerText = "Las contraseñas no coinciden";
-                            else
-                              passwordError[0].innerText  = "";
-                          });
-                  });
-
-            // Un evento para cuando se haga el cambio de la fecha, cambie el valor del segundo date como minimo del valor del primer date.
-            minFecha.addEventListener("change", () => maxFecha.min = minFecha.value);
-
-            // Es un metodo que regresa false para que el onsubmit no funcione si existe el error de las password.
-            const verifyPassword = () => {
-                    console.log(passwordInput[0].value !== passwordInput[1].value)
-                    if (passwordInput[0].value !== passwordInput[1].value)
-                      return false;
-                  }
-    </script>
 </html>

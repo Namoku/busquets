@@ -30,7 +30,7 @@
                   <fieldset class="inputGroup">
                     <label class="required" for="contraseñaDoble">Repetir contraseña</label>
                     <input id="contraseñaDoble" type="password" placeholder="Debe coincidir..." required >
-                    <label class="passwordError"></label>
+                    <p class="passwordError"></p>
                   </fieldset>
                   <fieldset class="inputGroup">
                     <label class="required" for="email">E-mail contacto</label>
@@ -135,6 +135,7 @@
             </div>
             <div class="section">
               <h3>Comentarios o sugerencias</h3>
+              <label for="comentarios"></label>
               <textarea id="comentarios" name="comentarios" rows="4" cols="33" ></textarea>
             </div>
             <div class="section">
@@ -155,7 +156,7 @@
         const minFecha = document.getElementById("minFecha");
                 const maxFecha = document.getElementById("maxFecha");
                 const passwordInput = document.querySelectorAll("input[type='password']");
-                const passwordError = document.querySelectorAll("label[class=passwordError]");
+                const passwordError = document.querySelectorAll("p[class=passwordError]");
 
                 // Un evento para asignar los valores minimos para la fecha
                 window.addEventListener("load", () => minFecha.min = maxFecha.min = new Date().toISOString().split("T")[0]);
